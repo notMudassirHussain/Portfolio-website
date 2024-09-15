@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>MH Portfolio</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo infobotix.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolios</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="hidden-text">
+                <p>Software Developers</p>
+                <h1>Hi, We are <span>Nobody</span> <br>from Pak<span class="istan">istan</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitles">About <span>Me</span></h1>
+                    <p>I am Mudassir Hussain, currently pursuing a Bachelor's degree in <span>Computer Science</span> from ITU, Lahore. I have 6 months of experience as a <span>Python developer</span> at Techionik Lahore, along with a 3-month internship in Python development from the same company. Currently, I work as a <span>freelancer</span> and collaborate with a startup called Infobotix Innovation on a contract basis.  My primary goal is to create <span>automated software</span> that enhances web workflows and performs tasks faster than humans.</p>
+                        <div class="tabs-titles">
+                            <p class="tabs-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tabs-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tabs-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Automation</span><br>Selenium</li>
+                                <li><span>Web Scraping</span><br>Scrapy</li>
+                                <li><span>CAPTCHA bypassing</span><br>Yollo and speed recognition</li>
+                                <li><span>Browser extensions</span><br>Automation extensions</li>
+                                <li><span>Discord Bots</span><br>Chat bots</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 Jan - Current</span><br>Infobotix Innovation</li>
+                                <li><span>2024 Jun - Dec</span><br>Techionik, Lahore</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 Jan - Current</span><br>Computer Science Student at ITU,Lahore</li>
+                                <li><span>2023 March - May</span><br>Python Developer Internship from Techionik, Lahore</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fas fa-at"></i> Email: <span class="green">notmudassirhussain.mh11@outlook.com</span></p>
+                    <p><i class="fas fa-phone"></i> Number +92 <span class="green">3102109629</span></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+                <div class="contant-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="button-1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tabs-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tab of tablinks){
+            tab.classList.remove("active-link");
+
+    }
+    for (tab of tabcontents){
+            tab.classList.remove("active-tab");
+
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
