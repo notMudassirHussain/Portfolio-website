@@ -227,55 +227,59 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+nav .fas{
+    display: none;
+}
 /* Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        padding: 0 5%;
+@media (max-width: 600px) {
+    #header{
+        background-image: url(images/Untitled\ design.png);
     }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .container {
-        padding: 10px 5%;
-    }
-
-    .hidden-text h1 {
-        font-size: 40px;
-    }
-
-    .hidden-text {
-        font-size: 20px;
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-col-1, .about-col-2, .contant-left, .contant-right {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-
-    .subtitles {
-        font-size: 40px;
-    }
-
-    .social-icons {
-        font-size: 24px;
-    }
-
-    .button-1 {
-        font-size: 12px;
-        padding: 8px 14px;
-    }
-
-    form input, form textarea {
+    .hidden-text{
+        margin-top: 100%;
         font-size: 16px;
+    }
+    .hidden-text h1{
+        font-size: 30px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#064520 ;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitles{
+        font-size: 40px
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .contant-left,.contant-right{
+        flex-basis: 100%;
     }
 }
 
