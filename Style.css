@@ -92,6 +92,12 @@ nav ul li a:hover:after
 .about-col-2{
     flex-basis: 60%;
 }
+#our-products{
+    padding: 80px 0;
+    background: #000000;
+    color: #abaaab;
+
+}
 .subtitles{
     font-size: 60px;
     font-weight: 600;
