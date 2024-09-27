@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,13 +15,21 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo infobotix.png" class="logo">
+                <a href="https://www.linkedin.com/company/infobotix-innovations/"> <img src="images/logo infobotix.png" class="logo"></a>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolios</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#our-products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Language</button>
+                        <div id="languageDropdown" class="dropdown-content">
+                            <a href="#"onclick="changeLanguage('english')">English</a>
+                            <a href="#" onclick="changeLanguage('spanish')">Español</a>
+                            <a href="#" onclick="changeLanguage('arabic')">العربية</a>
+                        </div>
+                    </li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -35,6 +44,7 @@
             </div>
         </div>
     </div>
+    <!-- about me -->
     <div id="about">
         <div class="container" id="portfolio_1">
             <div class="row">
@@ -82,7 +92,7 @@
     <!-- Our Products -->
     <div id="our-products">
         <div class="container">
-            <h1>Our Products</h1>
+            <h1 class = "marker subtitles">Our <span class="istan">Products</span> </h1>
             <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -126,20 +136,53 @@
             </div>
         </div>
     </div>
-
-    
+    <!-- My Product -->
+    <div class="section" id="services">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="marker subtitles">Our <span class="istan">Services</span></h2>
+          </div>
+          <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:800px">Discover our range of high-quality products designed to meet your needs. Explore the innovative solutions we offer for your daily tasks.</p>
+          </div>
+          <div class="row py-3">
+            <div class="col-md-4 text-center mb-5" data-aos="fade-up" data-aos-delay="100"> 
+              <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\web-design.svg" width="96" height="96" alt="Product 1"/></div>
+              <div class="bg-black border rounded p-3 mt-n4" style="overflow: hidden; height: 380px;">
+                <div class="h5 mt-3" style="color: white;">Captcha API</div>
+                <p class="text-small" style="color: #abaaab;">Tired of dealing with CAPTCHAs that slow down your workflow? Our CAPTCHA-solving service provides fast, reliable, and automated solutions to bypass CAPTCHA challenges with ease. Whether you're automating tasks, filling out forms, or scraping data, our service ensures seamless CAPTCHA resolution, allowing you to focus on what really matters. With cutting-edge technology, we handle reCAPTCHA, hCaptcha, image-based, and text-based CAPTCHAs in real time, ensuring accuracy and efficiency.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\data-mining.png" width="96" height="96" alt="Product 2"/></div>
+              <div class="bg-white border rounded p-3 mt-n4" style="height: 380px; overflow: hidden;">
+                <div class="h5 mt-3" style="color:black;">Web Automation</div>
+                <p class="text-small" style="color:#abaaab;">Streamline your online tasks with our powerful web automation services. We provide customized solutions that automate repetitive processes, improve efficiency, and reduce manual effort. Whether it's data scraping, form submissions, social media management, or e-commerce operations, our automation tools are tailored to your specific needs, saving you time and resources..</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mb-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2" src="images\medical-app.png" width="96" height="96" alt="Product 3"/></div>
+              <div class="bg-black border rounded p-3 mt-n4" style="overflow: hidden; height: 380px;">
+                <div class="h5 mt-3" style="color:white">Web Browser Extensions</div>
+                <p class="text-small" style="color:#abaaab;" >Enhance your web browsing experience with custom browser extensions designed to streamline tasks, boost productivity, and add valuable features directly to your browser. Our expert team builds secure, high-performance extensions for Chrome, Firefox, Edge, and other popular browsers, tailored to your business or personal needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- contact me  -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-titles">Contact Me</h1>
-                    <p><i class="fas fa-at"></i> Email: <span class="green">notmudassirhussain.mh11@outlook.com</span>
+                    <h1 class="sub-titles" style="color:white;">Contact <span class="istan">Me</span></h1>
+                    <p style="color:white;"><i class="fas fa-at" ></i> Email: <span class="green">notmudassirhussain.mh11@outlook.com</span>
                     </p>
-                    <p><i class="fas fa-phone"></i> Number +92 <span class="green">3102109629</span></p>
+                    <p style="color:white;"><i class="fas fa-phone"></i> Number +92 <span class="green">3102109629</span></p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-linkedin"></i></i></a>
+                        <a href="https://www.facebook.com/mudassirhussain.fp/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mudassir_hussain_fp_4511/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mudassir-hussain-2b66a5267/"><i class="fab fa-linkedin"></i></i></a>
                     </div>
                 </div>
                 <div class="contant-right">
@@ -179,19 +222,23 @@
         function printHidden(hiddenObj) {
             const container = document.getElementById('hidden-text');
             const p1 = document.createElement('p');
+            p1.classList.add('title');
             p1.textContent = hiddenObj.title;
             container.appendChild(p1);
             const h1 = document.createElement('h1');
+            h1.classList.add('title')
             h1.textContent = hiddenObj.h1;
             const span = document.createElement('span');
+            span.classList.add('nobody')
             span.textContent = hiddenObj.span1;
             h1.appendChild(span);
             const linebr = document.createElement('br');
             h1.appendChild(linebr);
             h1.append(hiddenObj.spanbr);
             const span2 = document.createElement('span');
-            span2.classList.add('istan');
             span2.textContent = hiddenObj.span2;
+            span2.classList.add('istan');
+            h1.appendChild(span2);
             h1.appendChild(span2);
             container.appendChild(h1);
         }
@@ -230,78 +277,117 @@
     </script>
     <script>
         const portfolioInfo = {
-            title: "About",
-            h1: "I am Mudassir Hussain",
-            description: "I am Mudassir Hussain, currently pursuing a Bachelor's degree in Computer Science from ITU, Lahore. I have 6 months of experience as a Python developer at Techionik Lahore, along with a 3-month internship in Python development from the same company. Currently, I work as a freelancer and collaborate with a startup called Infobotix Innovation on a contract basis. My primary goal is to create automated software that enhances web workflows and performs tasks faster than humans.",
+            title: {
+                english: "About",
+                spanish: "Acerca",
+                arabic: "معلومات"
+            },
+            h1: {
+                english: "I am Mudassir Hussain",
+                spanish: "Soy Mudassir Hussain",
+                arabic: "أنا مدثر حسين"
+            },
+            description: {
+                english: "I am Mudassir Hussain, currently pursuing a Bachelor's degree in Computer Science from ITU, Lahore. I have 6 months of experience as a Python developer at Techionik Lahore, along with a 3-month internship in Python development from the same company. Currently, I work as a freelancer and collaborate with a startup called Infobotix Innovation on a contract basis. My primary goal is to create automated software that enhances web workflows and performs tasks faster than humans.",
+                spanish: "Soy Mudassir Hussain, actualmente cursando una licenciatura en Ciencias de la Computación en ITU, Lahore. Tengo 6 meses de experiencia como desarrollador de Python en Techionik Lahore, junto con una pasantía de 3 meses en desarrollo de Python en la misma empresa. Actualmente, trabajo como freelancer y colaboro con una startup llamada Infobotix Innovation en base a contrato. Mi objetivo principal es crear software automatizado que mejore los flujos de trabajo web y realice tareas más rápido que los humanos.",
+                arabic: "أنا مدثر حسين، حاليًا أدرس للحصول على درجة البكالوريوس في علوم الكمبيوتر من ITU، لاهور. لدي 6 أشهر من الخبرة كمطور بايثون في Techionik لاهور، بالإضافة إلى تدريب لمدة 3 أشهر في تطوير بايثون من نفس الشركة. حاليًا، أعمل كعامل مستقل وأتعاون مع شركة ناشئة تسمى Infobotix Innovation على أساس عقد. هدفي الأساسي هو إنشاء برامج آلية تعزز تدفقات العمل على الويب وتقوم بالمهام بشكل أسرع من البشر."
+            },
             tabs: {
                 skills: {
-                    title: "Skills",
+                    title: {
+                        english: "Skills",
+                        spanish: "Habilidades",
+                        arabic: "المهارات"
+                    },
                     list: [
-                        { span: "Web Automation", description: "Selenium" },
-                        { span: "Web Scraping", description: "Scrapy" },
-                        { span: "CAPTCHA bypassing", description: "Yollo and speed recognition" },
-                        { span: "Browser extensions", description: "Automation extensions" },
-                        { span: "Discord Bots", description: "Chat bots" }
+                        { span: { english: "Web Automation", spanish: "Automatización Web", arabic: "أتمتة الويب" }, description: { english: "Selenium", spanish: "Selenium", arabic: "سيلينيوم" }},
+                        { span: { english: "Web Scraping", spanish: "Raspado Web", arabic: "استخراج بيانات الويب" }, description: { english: "Scrapy", spanish: "Scrapy", arabic: "سكرابي" }},
+                        { span: { english: "CAPTCHA bypassing", spanish: "Evitación de CAPTCHA", arabic: "تجاوز CAPTCHA" }, description: { english: "Yollo and speed recognition", spanish: "Yollo y reconocimiento de velocidad", arabic: "Yollo والتعرف على السرعة" }},
+                        { span: { english: "Browser extensions", spanish: "Extensiones de navegador", arabic: "إضافات المتصفح" }, description: { english: "Automation extensions", spanish: "Extensiones de automatización", arabic: "إضافات الأتمتة" }},
+                        { span: { english: "Discord Bots", spanish: "Bots de Discord", arabic: "روبوتات Discord" }, description: { english: "Chat bots", spanish: "Bots de chat", arabic: "روبوتات الدردشة" }}
                     ]
                 },
                 experience: {
-                    title: "Experience",
+                    title: {
+                        english: "Experience",
+                        spanish: "Experiencia",
+                        arabic: "الخبرة"
+                    },
                     list: [
-                        { span: "2024 Jan - Current", description: "Infobotix Innovation" },
-                        { span: "2024 Jun - Dec", description: "Techionik, Lahore" }
+                        { span: { english: "2024 Jan - Current", spanish: "Enero 2024 - Actual", arabic: "يناير 2024 - حالي" }, description: { english: "Infobotix Innovation", spanish: "Infobotix Innovation", arabic: "ابتكارات إنفوبوتكس" }},
+                        { span: { english: "2024 Jun - Dec", spanish: "Junio 2024 - Diciembre", arabic: "يونيو 2024 - ديسمبر" }, description: { english: "Techionik, Lahore", spanish: "Techionik, Lahore", arabic: "تيكيونيك، لاهور" }}
                     ]
                 },
                 education: {
-                    title: "Education",
+                    title: {
+                        english: "Education",
+                        spanish: "Educación",
+                        arabic: "التعليم"
+                    },
                     list: [
-                        { span: "2022 Jan - Current", description: "Computer Science Student at ITU, Lahore" },
-                        { span: "2023 March - May", description: "Python Developer Internship from Techionik, Lahore" }
+                        { span: { english: "2022 Jan - Current", spanish: "Enero 2022 - Actual", arabic: "يناير 2022 - حالي" }, description: { english: "Computer Science Student at ITU, Lahore", spanish: "Estudiante de Ciencias de la Computación en ITU, Lahore", arabic: "طالب في علوم الكمبيوتر في ITU، لاهور" }},
+                        { span: { english: "2023 March - May", spanish: "Marzo 2023 - Mayo", arabic: "مارس 2023 - مايو" }, description: { english: "Python Developer Internship from Techionik, Lahore", spanish: "Pasantía de desarrollador Python en Techionik, Lahore", arabic: "تدريب كمطور بايثون من تيكيونيك، لاهور" }}
                     ]
                 }
             }
         };
+
+        let currentLanguage = 'english'; // Default language
+        const meText = {
+            english: "Me",
+            spanish: "De",
+            arabic: "عنا"
+        };
+        function changeLanguage(language) {
+            currentLanguage = language;
+            generateAboutSection(portfolioInfo);
+        }
+
         function generateAboutSection(portfolioObj) {
         const container = document.getElementById('about-col-2');
-        
+        container.innerHTML = '';
+
         const h1 = document.createElement('h1');
         h1.classList.add('subtitles');
-        h1.innerHTML = `${portfolioObj.title} <span>Me</span>`;
+        h1.innerHTML = `${portfolioObj.title[currentLanguage]} <span>${meText[currentLanguage]}</span>`;
         container.appendChild(h1);
+
         const p = document.createElement('p');
-        p.innerHTML = portfolioObj.description.replace(/<span>/g, '<span>');
+        p.innerHTML = portfolioObj.description[currentLanguage];
         container.appendChild(p);
+
         const tabsTitles = document.createElement('div');
         tabsTitles.classList.add('tabs-titles');
-        
+
         Object.keys(portfolioObj.tabs).forEach((tabKey, index) => {
             const tabLink = document.createElement('p');
             tabLink.classList.add('tabs-links');
             if (index === 0) tabLink.classList.add('active-link');
-            tabLink.textContent = portfolioObj.tabs[tabKey].title;
+            tabLink.textContent = portfolioObj.tabs[tabKey].title[currentLanguage];
             tabLink.onclick = function() { opentab(tabKey); };
             tabsTitles.appendChild(tabLink);
         });
-        
+
         container.appendChild(tabsTitles);
         Object.keys(portfolioObj.tabs).forEach((tabKey, index) => {
             const tabContent = document.createElement('div');
             tabContent.classList.add('tab-contents');
             if (index === 0) tabContent.classList.add('active-tab');
             tabContent.id = tabKey;
-            
+
             const ul = document.createElement('ul');
-            
+
             portfolioObj.tabs[tabKey].list.forEach(item => {
                 const li = document.createElement('li');
                 const span = document.createElement('span');
-                span.textContent = item.span;
+                span.textContent = item.span[currentLanguage];
                 li.appendChild(span);
                 const br = document.createElement('br');
                 li.appendChild(br);
-                li.appendChild(document.createTextNode(item.description));
+                li.appendChild(document.createTextNode(item.description[currentLanguage]));
                 ul.appendChild(li);
             });
-            
+
             tabContent.appendChild(ul);
             container.appendChild(tabContent);
         });
@@ -311,7 +397,22 @@
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script> function toggleDropdown() {
+        document.getElementById("languageDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }</script>
 </body>
 
 </html>
